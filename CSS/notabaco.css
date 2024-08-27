@@ -1,32 +1,37 @@
 body {
     font-family: sans-serif;
-    font-size: 16px;
+    font-size: 15px;
+    color: white;
     line-height: 20px;
-    background-color: rgb(78, 175, 78);
-
+    background-color: rgb(9, 9, 59);
+    width: 100%;
 }
+
+/**aca comienza la cabecera**/
 
 header {
-    background-color: #2e64a1;
+    background-color: #364352;
     padding: 16px 0;
-    /*rem 0*/
 }
-header img{
-    width:300px;
+
+header img {
+    width: 275px;
     height: 100%;
-    margin: 0px;
+    float: right;
+    margin: 50px;
+    border: 2px solid black;
 }
 
-.mano{
-    width: 100%;
-    height: 500px;
+.mano {
+    width: 50%;
+    height: 50%;
     border-radius: 50%;
-    
-}
+    margin: 20px;
 
+}
 
 header h1 {
-    color: red;
+    color: white;
     font-size: 80px;
     font-weight: 100;
     font-style: italic;
@@ -36,9 +41,9 @@ header h1 {
     margin-left: 50px;
 }
 
+/**aca comienza la barra navegadora**/
 nav {
-    background-color: #6da9ed;
-    margin-bottom: 10px;
+    background-color: #49c5eb;
 
 }
 
@@ -62,40 +67,29 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(202, 54, 54, 0.3);
 
 }
 
 
-footer {
-    background-color: #ccc;
-    /*ccccc*/
-    clear: both;
-    color: #333;
-    text-align: center;
-    padding: 5px 0;
-    /*3rem 0*/
-    margin-top: 20px;
-}
 
-nav ul li a.activo{
+nav ul li a.activo {
     background-color: #4c76a5;
 }
 
+/**aca termina la barra nav**/
+
+/**aca comienza el contenido del home**/
 .holder {
     max-width: 960px;
     margin: 0 auto;
 }
 
 h2 {
-    color: #2e64a1;
+    color: #9a98f7;
     font-weight: 400;
-}
-
-.bienvenidos {
-    width: 75%;
-    padding-right: 10px;
-    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 35px;
 }
 
 .testimonios {
@@ -126,72 +120,78 @@ h2 {
     text-align: center;
     display: block;
     margin: 12px;
+    font-size: 15px;
 }
 
-.organizacion{
-    font-size: 12px; /*0.7rem*/
+/**aca termina el contenido del home*/
+
+/**aca comienza la seccion Organizacion*/
+
+.organizacion {
+    font-size: 12px;
+
 }
 
-.personas{
+.personas {
     display: flex;
     justify-content: space-between;
 
 }
 
-.persona{
+.persona {
     border: 1px solid #ccc;
     border-radius: 5px;
     width: 18%;
     text-align: center;
     padding: 13px;
     box-sizing: border-box;
+    background-color: #364352;
 }
 
-.persona img{
+.persona img {
     border-radius: 50%;
     max-width: 60%;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 
 }
 
-.persona h5
-.persona h6{
+.persona h5 .persona h6 {
     margin: 0;
     font-weight: normal;
     color: #2e64a1;
-}    
+}
 
-.persona h5{
+.persona h5 {
     font-size: 14px;
     margin-top: 5px;
 
 }
 
-.persona h6{
+.persona h6 {
     font-size: 11px;
     font-style: italic;
 }
 
-.persona p{
+.persona p {
     color: #666;
     font-size: 10px;
 }
 
 /*ACA EMPIEZA SECCION TEMAS*/
 
-.temas{
-        border: 1px solid#ccc;
-        border-radius: 10px;
-        padding: 16px;
-        margin:16px;
-        display: flex;
-        gap:32px;
-        align-items: center;
-        background-color: #ccc;
+.temas {
+    border: 1px solid#ccc;
+    border-radius: 10px;
+    padding: 16px;
+    margin: 16px;
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    background-color: #ccc;
 
 }
 
-.temas .info h4{
+.temas .info h4 {
     color: #2e64a1;
     font-weight: 500;
     font-style: italic;
@@ -199,12 +199,12 @@ h2 {
     padding-bottom: 10px;
 }
 
-.temas .info p{
+.temas .info p {
     font-size: 13px;
 
 }
 
-.temas img{
+.temas img {
     border-radius: 13px;
     display: block;
     max-width: 225px;
@@ -217,14 +217,14 @@ h2 {
 /*aca termina la seccion Temas*/
 
 /*ACA COMIENZA LA SECCION GALERIA*/
-.galeria{
+.galeria {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
 
 }
 
-.galeria img{
+.galeria img {
     width: 18%;
     border: 1px solid #ddd;
     padding: 0.3em;
@@ -237,45 +237,68 @@ h2 {
 /*aca termina la galeria*/
 
 /*ACA COMIENZA CONTACTOS*/
-.contacto{
+.contacto {
     display: flex;
-    gap:24px;
+    gap: 24px;
 }
 
-.contacto div{
+.contacto div {
     width: 100%;
 }
 
-.datos p{
+.datos p {
     font-size: 14px;
 }
 
-datos ul li{
+datos ul li {
     font-size: 13px;
 }
 
-.formulario p{
+.datos img.cuidado {
+    width: 500px;
+    float: right;
+    border-radius: 25%;
+
+}
+
+.formulario p {
     display: flex;
 }
 
-.formulario p label{
+.formulario p label {
     min-width: 80px;
 }
 
-.formulario p laber{
+.formulario p laber {
     display: flex;
     align-items: center;
 }
 
-.formulario p:nth-child(4){
+.formulario p:nth-child(4) {
     align-items: start;
 }
 
-.formulario textarea{
+.formulario textarea {
     resize: none;
     height: 150px;
 }
 
 .formulario input[type="submit"]:hover {
     background-color: #2e64a1;
+}
+
+.mormon {
+    width: 500px;
+
+}
+
+/**aca comienza el footer**/
+
+footer {
+    background-color: #ccc;
+    clear: both;
+    color: #333;
+    text-align: center;
+    padding: 5px 0;
+    margin-top: 20px;
 }
