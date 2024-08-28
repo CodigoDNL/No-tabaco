@@ -234,62 +234,87 @@ h2 {
 
 }
 
-/*aca termina la galeria*/
-
-/*ACA COMIENZA CONTACTOS*/
-.contacto {
-    display: flex;
-    gap: 24px;
+small {
+    display: none;
 }
 
-.contacto div {
+.container {
+    max-width: 500px;
+    width: 450px;
+    margin-left: 400px;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.container {
+    justify-content: center;
+    padding: 5px;
+    background: linear-gradient(130deg, green, blue);
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.container .title {
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container form {
+    margin: 10px 20px 10px;
+    width: 500px;
+    height: 100%;
+    border-radius: 5px;
+    grid-row: auto;
+}
+
+form .form-group {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 60px;
+    width: calc(100%/2 - 20px);
+}
+
+form span {
+    display: block;
+    font-weight: 500px;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    height: 20px;
     width: 100%;
-}
-
-.datos p {
-    font-size: 14px;
-}
-
-datos ul li {
-    font-size: 13px;
-}
-
-.datos img.cuidado {
-    width: 500px;
-    float: right;
-    border-radius: 25%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
 
 }
 
-.formulario p {
-    display: flex;
+.form-group input:focus,
+.form-group input:valid {
+    border-color: green;
 }
 
-.formulario p label {
-    min-width: 80px;
+form .button {
+    width: 100%;
+    height: 40px;
+    margin: 40px 0;
 }
 
-.formulario p laber {
-    display: flex;
-    align-items: center;
+
+form .button input {
+    width: 100px;
+    height: 40px;
+    outline: none;
+    cursor: pointer;
+    margin-left: 20px;
+
 }
 
-.formulario p:nth-child(4) {
-    align-items: start;
-}
-
-.formulario textarea {
-    resize: none;
-    height: 150px;
-}
-
-.formulario input[type="submit"]:hover {
-    background-color: #2e64a1;
-}
-
-.mormon {
-    width: 500px;
-
+.was-validated small {
+    display: block;
+    color: red;
 }
 
 /**aca comienza el footer**/
@@ -302,3 +327,31 @@ footer {
     padding: 5px 0;
     margin-top: 20px;
 }
+
+@media(max-width:584px) {
+    .container {
+        max-width: 100%;
+    }
+
+    form .form-group {
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+    .container form {
+        max-height: 400px;
+        overflow: scroll;
+    }
+
+    .container form::-webkit-scrollbar {
+        width: 0;
+
+    }
+
+    form .button {
+        margin: 20px 0;
+
+    }
+
+}
+
