@@ -7,7 +7,7 @@ body {
     width: 100%;
 }
 
-/**aca comienza la cabecera**/
+/*aca comienza la cabecera*/
 
 header {
     background-color: #364352;
@@ -41,7 +41,7 @@ header h1 {
     margin-left: 50px;
 }
 
-/**aca comienza la barra navegadora**/
+/*aca comienza la barra navegadora*/
 nav {
     background-color: #49c5eb;
 
@@ -216,50 +216,43 @@ h2 {
 
 /*aca termina la seccion Temas*/
 
-/*ACA COMIENZA LA SECCION GALERIA*/
+/*comienza la galeria en js*/
 
-/**.galeria {
+.grande {
+    width: 250px;
+    height: 250px;
+}
+
+.carrousel {
+    width: 250px;
+    min-width: 250px;
+    background-color: black;
+    @include neo(1, 1em, 1em);
+
+}
+
+.carrousel .grande {
+    width: 50%;
+    background-color: orange;
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: row nowrap;
     justify-content: flex-start;
+    align-items: center;
+    @include neo(1, 1em, 1em);
+    padding: 2em;
+    transition: all .5s ease;
+    transform: translateX(-50%);
 
 }
 
-.galeria img {
-    width: 18%;
-    border: 1px solid #ddd;
-    padding: 0.3em;
-    box-sizing: border-box;
-    margin-top: 20px;
-    margin-right: 2%;
+.carrousel .img {
+    width: calc(100 / 2 );
+    @include neo(1, 1em, 1em);
 
 }
 
-**/
-
-.carrousel{
-    width: 40%;
-    min-width: 120em;
-    background-color: lightblue;
-
-}
-
-.carrousel .grande{
-        width: 200%;
-        background-color: orange;
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: flex-start;
-        align-items: center;
-
-}
-.carrousel .img{
-    width: calc(100 / 6);
-    background-color: #11c772;
-
-}
-.carrousel .puntos{
-    width: 100%;
+.carrousel .puntos {
+    width: 250px;
     background-color: red;
     padding: 1em;
     display: flex;
@@ -268,12 +261,17 @@ h2 {
     align-items: center;
 }
 
-.carrousel .puntos{
-    width: 1em;
-    height: 1em;
-    background-color: blue;
-    margin: 1em;
+.carrousel .punto {
+    width: 2em;
+    height: 2em;
+    margin: 1em 1em .6em;
+    @include neo(1, 1em, .6em);
 }
+
+.carrousel .punto.activo {
+    background-color: rgb(131, 67, 161);
+
+} 
 
 /**comienza a tomar vida el formulario**/
 
@@ -282,8 +280,8 @@ small {
 }
 
 .container {
-    max-width: 500px;
-    width: 450px;
+    max-width: 250px;
+    width: 250px;
     margin-left: 400px;
     padding: 25px;
     box-sizing: border-box;
@@ -397,4 +395,3 @@ footer {
     }
 
 }
-
