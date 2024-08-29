@@ -73,6 +73,8 @@ nav ul li a.activo {
 }
 
 /**aca termina la barra nav**/
+
+
 /**aca comienza el contenido del home**/
 .holder {
   max-width: 960px;
@@ -116,6 +118,9 @@ h2 {
 }
 
 /**aca termina el contenido del home*/
+
+
+
 /**aca comienza la seccion Organizacion*/
 .organizacion {
   font-size: 12px;
@@ -198,62 +203,29 @@ h2 {
 }
 
 /*aca termina la seccion Temas*/
+
+
 /*ACA COMIENZA LA SECCION GALERIA*/
-/*
-.galeria {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
 
-}
-
-.galeria img {
-    width: 18%;
-    border: 1px solid #ddd;
-    padding: 0.3em;
-    box-sizing: border-box;
-    margin-top: 20px;
-    margin-right: 2%;
-
-}
-
-**/
-.carrousel {
-  width: 40%;
-  min-width: 120em;
-  background-color: lightblue;
-}
-
-.carrousel .grande {
-  width: 200%;
-  background-color: orange;
+.row{
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-start;
-  align-items: center;
+  padding: 5px;
+  flex-wrap: wrap;
+  margin-left: 20px;
+
 }
 
-.carrousel .img {
-  width: 16.6666666667;
-  background-color: #11c772;
+.column{
+  flex:25%;
+  padding: 5px;
+  margin-left: auto;
 }
 
-.carrousel .puntos {
-  width: 100%;
-  background-color: red;
-  padding: 1em;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-items: center;
+.column img{
+    margin-top: 5px;
+
 }
 
-.carrousel .puntos {
-  width: 1em;
-  height: 1em;
-  background-color: blue;
-  margin: 1em;
-}
 
 /**comienza a tomar vida el formulario**/
 small {
