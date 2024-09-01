@@ -218,7 +218,7 @@ h2 {
 
 /*ACA COMIENZA LA SECCION GALERIA*/
 
-/**.galeria {
+.galeria {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -232,48 +232,8 @@ h2 {
     box-sizing: border-box;
     margin-top: 20px;
     margin-right: 2%;
-
 }
 
-**/
-
-.carrousel{
-    width: 40%;
-    min-width: 120em;
-    background-color: lightblue;
-
-}
-
-.carrousel .grande{
-        width: 200%;
-        background-color: orange;
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: flex-start;
-        align-items: center;
-
-}
-.carrousel .img{
-    width: calc(100 / 6);
-    background-color: #11c772;
-
-}
-.carrousel .puntos{
-    width: 100%;
-    background-color: red;
-    padding: 1em;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.carrousel .puntos{
-    width: 1em;
-    height: 1em;
-    background-color: blue;
-    margin: 1em;
-}
 
 /**comienza a tomar vida el formulario**/
 
